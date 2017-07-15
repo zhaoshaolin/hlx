@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>发布分享</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/list.css" />
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript">
+    $(function(){
+        $('.redBlock').css("left", '33.33%');
+        $('.move').css('left', '-100%');
+        $('.state:eq(0)').click(function(event) {
+            $(this).addClass('colorOn').siblings().removeClass('colorOn');
+            $('.redBlock').animate({left: '0%'});
+            $('.move').css('left', '0%');
+        });
+        $('.state:eq(1)').click(function(event) {
+            $(this).addClass('colorOn').siblings().removeClass('colorOn');
+            $('.redBlock').animate({left: '33.33%'});
+            $('.move').css('left', '-100%');
+        });
+        $('.state:eq(2)').click(function(event) {
+            $(this).addClass('colorOn').siblings().removeClass('colorOn');
+            $('.redBlock').animate({left: '67%'});
+            $('.move').css('left', '-200%');
+        });
+    })
+    </script>
+</head>
+<body>
+<!-- header -->
+<header class="title">
+    <span class="back"></span>
+    活动
+</header>
+<div style="height:40px;"></div>
+<!-- active-state -->
+<div class="stateBox">
+  <div class="state">参与活动</div>
+  <div class="state colorOn">中标活动</div>
+  <div class="state">发布活动</div>
+  <div class="redBlock"></div>
+</div>
+<!-- active-detail -->
+<div class="activelistBox">
+    <div class="move">
+        <!-- 参与活动 -->
+        <ul class="activeUl">
+            <li>
+                <a href="detail.html">
+                    <span class="tagSpan">iphone7<br>256G</span>
+                    <i class="identifyIcon"><img src="images/identy.png" height="20" /></i>
+                    <img class="phoneImg" src="images/iphone.png" />
+                    <div class="msgDetail">
+                        <i class="location">北京</i>
+                        iphone7 256G疯抢最后三天！
+                    </div>
+                    <div class="progressBar">
+                        揭晓进度：
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="detail.html">
+                    <span class="tagSpan">iphone7<br>256G</span>
+                    <i class="identifyIcon"><!-- <img src="images/identy.png" height="20" /> --></i>
+                    <img class="phoneImg" src="images/iphone.png" />
+                    <div class="msgDetail">
+                        <i class="location">北京</i>
+                        iphone7 256G疯抢最后三天！
+                    </div>
+                    <div class="progressBar">
+                        揭晓进度：
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="detail.html">
+                    <span class="tagSpan">iphone7<br>256G</span>
+                    <i class="identifyIcon"><img src="images/identy.png" height="20" /></i>
+                    <img class="phoneImg" src="images/iphone.png" />
+                    <div class="msgDetail">
+                        <i class="location">北京</i>
+                        iphone7 256G疯抢最后三天！
+                    </div>
+                    <div class="progressBar">
+                        揭晓进度：
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="detail.html">
+                    <span class="tagSpan">iphone7<br>256G</span>
+                    <i class="identifyIcon"><!-- <img src="images/identy.png" height="20" /> --></i>
+                    <img class="phoneImg" src="images/iphone.png" />
+                    <div class="msgDetail">
+                        <i class="location">北京</i>
+                        iphone7 256G疯抢最后三天！
+                    </div>
+                    <div class="progressBar">
+                        揭晓进度：
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <!-- 中标活动 -->
+        <ul class="activeUl">
+            <li>
+                <a href="detail.html">
+                    <span class="tagSpan">iphone7 plus<br>256G</span>
+                    <i class="identifyIcon"><img src="images/identy.png" height="20" /></i>
+                    <img class="phoneImg" src="images/iphone.png" />
+                    <div class="msgDetail">
+                        <i class="location">北京</i>
+                        iphone7 plu 256G疯抢最后三天！
+                    </div>
+                    <div class="progressBar">
+                        揭晓进度：
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="detail.html">
+                    <span class="tagSpan">iphone7 plus<br>256G</span>
+                    <i class="identifyIcon"><!-- <img src="images/identy.png" height="20" /> --></i>
+                    <img class="phoneImg" src="images/iphone.png" />
+                    <div class="msgDetail">
+                        <i class="location">北京</i>
+                        iphone7 plus 256G疯抢最后三天！
+                    </div>
+                    <div class="progressBar">
+                        揭晓进度：
+                    </div>
+                </a>
+            </li>    
+        </ul>
+        <!-- 发布活动 -->
+        <ul class="activeUl">
+            <li>
+                <a href="detail.html">
+                    <span class="tagSpan">iphone7 plus<br>128G</span>
+                    <i class="identifyIcon"><img src="images/identy.png" height="20" /></i>
+                    <img class="phoneImg" src="images/iphone.png" />
+                    <div class="msgDetail">
+                        <i class="location">北京</i>
+                        iphone7 plus 128G疯抢最后一天！
+                    </div>
+                    <div class="progressBar">
+                        揭晓进度：
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="detail.html">
+                    <span class="tagSpan">iphone7<br>128G</span>
+                    <i class="identifyIcon"><!-- <img src="images/identy.png" height="20" /> --></i>
+                    <img class="phoneImg" src="images/iphone.png" />
+                    <div class="msgDetail">
+                        <i class="location">北京</i>
+                        iphone7 128G疯抢最后一天！
+                    </div>
+                    <div class="progressBar">
+                        揭晓进度：
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

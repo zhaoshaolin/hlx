@@ -1,0 +1,87 @@
+section{
+    background:#fff;
+}
+.regSection,.loginSection{
+    width:100%;
+    padding:1em 0.6em;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.regSection li,.loginSection li{
+    border-bottom:1px solid #dedede;
+    margin-bottom: 10px;
+    background-position: 5px center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.regSection li:nth-child(1){
+    background-image: url(../images/icon_phone.png);
+}
+.regSection li:nth-child(2){
+    background-image: url(../images/icon_email.png);
+    position: relative;
+}
+.regSection li:nth-child(3){
+    background-image: url(../images/icon_password.png);
+}
+.regSection li:nth-child(4){
+    background-image: url(../images/icon_password.png);
+}
+.regSection li input,.loginSection li input{
+    border:none;
+    height:40px;
+    line-height: 40px;
+    width:80%;
+    margin-left: 2.6em;
+}
+.regSection li .yanzm{
+    position: absolute;
+    right:2em;
+    top:10px;
+    color:#aa1f10;
+}
+.submitBtnReg,.submitBtnLogin{
+    width:100%;
+    box-sizing: border-box;
+    background:#aa1f10;
+    border-radius: 5px;
+    color:#fff;
+    text-align: center;
+    line-height: 36px;
+    border:none;
+    margin:20px 0 10px;
+    font-size: 1rem;
+    font-family: "microsoft yahei";
+}
+.agreement{
+    line-height: 36px;
+    text-align: center;
+    color:#999;
+}
+.agreement span{
+    color:#aa1f10;
+}
+/*登录*/
+.loginSection li:nth-child(1){
+    background-image: url(../images/icon_phone.png);
+} 
+.loginSection li:nth-child(2){
+    background-image: url(../images/icon_password.png);
+}
+.reg-forget a{
+    margin:0 5px;
+    color:#aa1f10;
+}
+
+#phoneInputError,#passdwordInputError,#repasswordInputError{
+    position: absolute;
+    top:10px;
+    right:0px;
+    color: #aa1f10;
+}
+.havPhone{
+    line-height: 36px;
+    color: #999;
+    background: #efefef;
+    padding-left: 10px;
+}

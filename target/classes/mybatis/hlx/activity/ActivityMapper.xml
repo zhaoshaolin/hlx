@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="ActivityMapper" >
+  <resultMap id="ActivityResult" type="Activity" >
+    <id column="activityId" property="activityid" jdbcType="INTEGER" />
+    <result column="activityName" property="activityname" jdbcType="VARCHAR" />
+    <result column="activityPeople" property="activitypeople" jdbcType="VARCHAR" />
+    <result column="activityType" property="activitytype" jdbcType="VARCHAR" />
+    <result column="activityMoey" property="activitymoey" jdbcType="BIGINT" />
+    <result column="activityAddress" property="activityaddress" jdbcType="VARCHAR" />
+	 <result column="activityInfo" property="activityinfo" jdbcType="LONGVARCHAR" />
+    <result column="activityRule" property="activityrule" jdbcType="LONGVARCHAR" />
+    <result column="ext1" property="ext1" jdbcType="VARCHAR" />
+    <result column="ext2" property="ext2" jdbcType="VARCHAR" />
+    <result column="ext3" property="ext3" jdbcType="VARCHAR" />
+    <result column="ext4" property="ext4" jdbcType="VARCHAR" />
+  </resultMap>
+  
+  <sql id="Base_Column_List" >
+    activityId, activityName, activityPeople, activityType, activityMoey, activityAddress,  activityInfo, activityRule ,
+    ext1, ext2, ext3, ext4
+  </sql>
+ 
+  <select id="selectByPrimaryKey" resultMap="ActivityResult" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    
+    from activity
+    where activityId = #{activityid,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from activity
+    where activityId = #{activityid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="Activity" >
+    insert into activity (activityId, activityName, activityPeople, 
+      activityType, activityMoey, activityAddress, 
+      ext1, ext2, ext3, ext4, 
+      activityInfo, activityRule)
+    values (#{activityid,jdbcType=INTEGER}, #{activityname,jdbcType=VARCHAR}, #{activitypeople,jdbcType=VARCHAR}, 
+      #{activitytype,jdbcType=VARCHAR}, #{activitymoey,jdbcType=BIGINT}, #{activityaddress,jdbcType=VARCHAR}, 
+      #{ext1,jdbcType=VARCHAR}, #{ext2,jdbcType=VARCHAR}, #{ext3,jdbcType=VARCHAR}, #{ext4,jdbcType=VARCHAR}, 
+      #{activityinfo,jdbcType=LONGVARCHAR}, #{activityrule,jdbcType=LONGVARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="Activity" >
+    insert into activity
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="activityid != null" >
+        activityId,
+      </if>
+      <if test="activityname != null" >
+        activityName,
+      </if>
+      <if test="activitypeople != null" >
+        activityPeople,
+      </if>
+      <if test="activitytype != null" >
+        activityType,
+      </if>
+      <if test="activitymoey != null" >
+        activityMoey,
+      </if>
+      <if test="activityaddress != null" >
+        activityAddress,
+      </if>
+      <if test="ext1 != null" >
+        ext1,
+      </if>
+      <if test="ext2 != null" >
+        ext2,
+      </if>
+      <if test="ext3 != null" >
+        ext3,
+      </if>
+      <if test="ext4 != null" >
+        ext4,
+      </if>
+      <if test="activityinfo != null" >
+        activityInfo,
+      </if>
+      <if test="activityrule != null" >
+        activityRule,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="activityid != null" >
+        #{activityid,jdbcType=INTEGER},
+      </if>
+      <if test="activityname != null" >
+        #{activityname,jdbcType=VARCHAR},
+      </if>
+      <if test="activitypeople != null" >
+        #{activitypeople,jdbcType=VARCHAR},
+      </if>
+      <if test="activitytype != null" >
+        #{activitytype,jdbcType=VARCHAR},
+      </if>
+      <if test="activitymoey != null" >
+        #{activitymoey,jdbcType=BIGINT},
+      </if>
+      <if test="activityaddress != null" >
+        #{activityaddress,jdbcType=VARCHAR},
+      </if>
+      <if test="ext1 != null" >
+        #{ext1,jdbcType=VARCHAR},
+      </if>
+      <if test="ext2 != null" >
+        #{ext2,jdbcType=VARCHAR},
+      </if>
+      <if test="ext3 != null" >
+        #{ext3,jdbcType=VARCHAR},
+      </if>
+      <if test="ext4 != null" >
+        #{ext4,jdbcType=VARCHAR},
+      </if>
+      <if test="activityinfo != null" >
+        #{activityinfo,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="activityrule != null" >
+        #{activityrule,jdbcType=LONGVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="Activity" >
+    update activity
+    <set >
+      <if test="activityname != null" >
+        activityName = #{activityname,jdbcType=VARCHAR},
+      </if>
+      <if test="activitypeople != null" >
+        activityPeople = #{activitypeople,jdbcType=VARCHAR},
+      </if>
+      <if test="activitytype != null" >
+        activityType = #{activitytype,jdbcType=VARCHAR},
+      </if>
+      <if test="activitymoey != null" >
+        activityMoey = #{activitymoey,jdbcType=BIGINT},
+      </if>
+      <if test="activityaddress != null" >
+        activityAddress = #{activityaddress,jdbcType=VARCHAR},
+      </if>
+      <if test="ext1 != null" >
+        ext1 = #{ext1,jdbcType=VARCHAR},
+      </if>
+      <if test="ext2 != null" >
+        ext2 = #{ext2,jdbcType=VARCHAR},
+      </if>
+      <if test="ext3 != null" >
+        ext3 = #{ext3,jdbcType=VARCHAR},
+      </if>
+      <if test="ext4 != null" >
+        ext4 = #{ext4,jdbcType=VARCHAR},
+      </if>
+      <if test="activityinfo != null" >
+        activityInfo = #{activityinfo,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="activityrule != null" >
+        activityRule = #{activityrule,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    where activityId = #{activityid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="Activity" >
+    update activity
+    set activityName = #{activityname,jdbcType=VARCHAR},
+      activityPeople = #{activitypeople,jdbcType=VARCHAR},
+      activityType = #{activitytype,jdbcType=VARCHAR},
+      activityMoey = #{activitymoey,jdbcType=BIGINT},
+      activityAddress = #{activityaddress,jdbcType=VARCHAR},
+      ext1 = #{ext1,jdbcType=VARCHAR},
+      ext2 = #{ext2,jdbcType=VARCHAR},
+      ext3 = #{ext3,jdbcType=VARCHAR},
+      ext4 = #{ext4,jdbcType=VARCHAR},
+      activityInfo = #{activityinfo,jdbcType=LONGVARCHAR},
+      activityRule = #{activityrule,jdbcType=LONGVARCHAR}
+    where activityId = #{activityid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="Activity" >
+    update activity
+    set activityName = #{activityname,jdbcType=VARCHAR},
+      activityPeople = #{activitypeople,jdbcType=VARCHAR},
+      activityType = #{activitytype,jdbcType=VARCHAR},
+      activityMoey = #{activitymoey,jdbcType=BIGINT},
+      activityAddress = #{activityaddress,jdbcType=VARCHAR},
+      ext1 = #{ext1,jdbcType=VARCHAR},
+      ext2 = #{ext2,jdbcType=VARCHAR},
+      ext3 = #{ext3,jdbcType=VARCHAR},
+      ext4 = #{ext4,jdbcType=VARCHAR}
+    where activityId = #{activityid,jdbcType=INTEGER}
+  </update>
+</mapper>

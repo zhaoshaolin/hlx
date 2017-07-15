@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>首页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/amazeui.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/font.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/amazeui.min.js"></script> 
+    <script type="text/javascript" src="js/footer.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $('.fiveIcon li').click(function(){
+              var index=$(this).index();
+                $(this).addClass('links_hover').siblings().removeClass('links_hover');
+                $('.activeUl').hide().eq(index).show();  
+            })
+        })
+    </script>
+</head>
+<body>
+<!-- header -->
+<header class="am-header top-header" id="shortbar">
+    <div class="am-header-left am-header-nav"><a href="#" class="nav_text">北京<i class="sel"></i></a></div>
+    <div class="am-header-right box-search">
+        <a href="#"><i class="searchIcon"></i><span>请输入搜索关键词</span></a>
+    </div>
+</header>
+<div style="height:49px"></div>
+<!-- banner -->
+<div class="am-slider am-slider-default bannerZ" data-am-flexslider id="demo-slider-0">
+  <ul class="am-slides">
+    <li><img src="images/banner.png"  /></li>
+    <li><img src="images/banner.png" /></li>
+  </ul>
+</div>
+<!-- module+five -->
+<ul class="fiveIcon">
+    <li class="links_hover"><a href="#"><span></span>吃</a></li>
+    <li><a href="#"><span></span>喝</a></li>
+    <li><a href="#"><span></span>玩</a></li>
+    <li><a href="#"><span></span>乐</a></li>
+    <li><a href="#"><span></span>享</a></li>
+</ul>
+<!-- active -->
+<ul class="activeUl" style="display:block;">
+    <li>
+        <a href="detail.html">
+            <span class="tagSpan">iphone7<br>256G</span>
+            <i class="identifyIcon"><img src="images/identy.png" height="20" /></i>
+            <img class="phoneImg" src="images/iphone.png" />
+            <div class="msgDetail">
+                <i class="location">北京</i>
+                iphone7 256G疯抢最后三天！
+            </div>
+            <div class="progressBar">
+                揭晓进度：
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="detail.html">
+            <span class="tagSpan">iphone7<br>256G</span>
+            <i class="identifyIcon"><!-- <img src="images/identy.png" height="20" /> --></i>
+            <img class="phoneImg" src="images/iphone.png" />
+            <div class="msgDetail">
+                <i class="location">北京</i>
+                iphone7 256G疯抢最后三天！
+            </div>
+            <div class="progressBar">
+                揭晓进度：
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="detail.html">
+            <span class="tagSpan">iphone7<br>256G</span>
+            <i class="identifyIcon"><img src="images/identy.png" height="20" /></i>
+            <img class="phoneImg" src="images/iphone.png" />
+            <div class="msgDetail">
+                <i class="location">北京</i>
+                iphone7 256G疯抢最后三天！
+            </div>
+            <div class="progressBar">
+                揭晓进度：
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="detail.html">
+            <span class="tagSpan">iphone7<br>256G</span>
+            <i class="identifyIcon"><!-- <img src="images/identy.png" height="20" /> --></i>
+            <img class="phoneImg" src="images/iphone.png" />
+            <div class="msgDetail">
+                <i class="location">北京</i>
+                iphone7 256G疯抢最后三天！
+            </div>
+            <div class="progressBar">
+                揭晓进度：
+            </div>
+        </a>
+    </li>
+</ul>
+
+<ul class="activeUl" style="display:none;">
+    <li>
+        <a href="detail.html">
+            <span class="tagSpan">iphone7<br>256G</span>
+            <i class="identifyIcon"><img src="images/identy.png" height="20" /></i>
+            <img class="phoneImg" src="images/iphone.png" />
+            <div class="msgDetail">
+                <i class="location">北京</i>
+                iphone7 256G疯抢最后三天！
+            </div>
+            <div class="progressBar">
+                揭晓进度：
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="detail.html">
+            <span class="tagSpan">iphone7<br>256G</span>
+            <i class="identifyIcon"><!-- <img src="images/identy.png" height="20" /> --></i>
+            <img class="phoneImg" src="images/iphone.png" />
+            <div class="msgDetail">
+                <i class="location">北京</i>
+                iphone7 256G疯抢最后三天！
+            </div>
+            <div class="progressBar">
+                揭晓进度：
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="detail.html">
+            <span class="tagSpan">iphone7<br>256G</span>
+            <i class="identifyIcon"><!-- <img src="images/identy.png" height="20" /> --></i>
+            <img class="phoneImg" src="images/iphone.png" />
+            <div class="msgDetail">
+                <i class="location">北京</i>
+                iphone7 256G疯抢最后三天！
+            </div>
+            <div class="progressBar">
+                揭晓进度：
+            </div>
+        </a>
+    </li>
+</ul>
+
+<ul class="activeUl" style="display:none;">
+    <li>
+        <a href="detail.html">
+            <span class="tagSpan">iphone7<br>256G</span>
+            <i class="identifyIcon"><img src="images/identy.png" height="20" /></i>
+            <img class="phoneImg" src="images/iphone.png" />
+            <div class="msgDetail">
+                <i class="location">北京</i>
+                iphone7 256G疯抢最后三天！
+            </div>
+            <div class="progressBar">
+                揭晓进度：
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="detail.html">
+            <span class="tagSpan">iphone7<br>256G</span>
+            <i class="identifyIcon"><!-- <img src="images/identy.png" height="20" /> --></i>
+            <img class="phoneImg" src="images/iphone.png" />
+            <div class="msgDetail">
+                <i class="location">北京</i>
+                iphone7 256G疯抢最后三天！
+            </div>
+            <div class="progressBar">
+                揭晓进度：
+            </div>
+        </a>
+    </li>
+</ul>
+
+<ul class="activeUl" style="display:none;">
+    <li>
+        <a href="detail.html">
+            <span class="tagSpan">iphone7<br>256G</span>
+            <i class="identifyIcon"><!-- <img src="images/identy.png" height="20" /> --></i>
+            <img class="phoneImg" src="images/iphone.png" />
+            <div class="msgDetail">
+                <i class="location">北京</i>
+                iphone7 256G疯抢最后三天！
+            </div>
+            <div class="progressBar">
+                揭晓进度：
+            </div>
+        </a>
+    </li>
+</ul>
+
+<ul class="activeUl" style="display:none;">
+    <li>
+        <a href="detail.html">
+            <span class="tagSpan">iphone7<br>256G</span>
+            <i class="identifyIcon"><img src="images/identy.png" height="20" /></i>
+            <img class="phoneImg" src="images/iphone.png" />
+            <div class="msgDetail">
+                <i class="location">北京</i>
+                iphone7 256G疯抢最后三天！
+            </div>
+            <div class="progressBar">
+                揭晓进度：
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="detail.html">
+            <span class="tagSpan">iphone7<br>256G</span>
+            <i class="identifyIcon"><!-- <img src="images/identy.png" height="20" /> --></i>
+            <img class="phoneImg" src="images/iphone.png" />
+            <div class="msgDetail">
+                <i class="location">北京</i>
+                iphone7 256G疯抢最后三天！
+            </div>
+            <div class="progressBar">
+                揭晓进度：
+            </div>
+        </a>
+    </li>
+</ul>
+
+<div style="height:56px;"></div>
+<!-- footer -->
+<footer class="footer">
+    <ul>            
+        <li class="fontRed">
+            <a href="index.html">
+                <i class="icon iconfont">&#xe62a;</i>
+                <div class="name">首页</div>
+            </a>
+        </li>    
+        <li>
+            <a href="msg.html">
+                <i class="icon iconfont">&#xe6b7;</i>
+                <div class="name">私信</div>
+            </a>
+        </li>    
+        <li>
+            <a href="#">
+                <div class="issueBtn" onclick="showGray()"></div>
+            </a>
+        </li>
+        <li>
+            <a href="news.html">
+                <i class="icon iconfont">&#xe629;</i>
+                <div class="name">消息</div>
+            </a>
+        </li>
+        <li>
+            <a href="info.html">
+                <i class="icon iconfont">&#xe65c;</i>
+                <div class="name">我的</div>
+            </a>
+        </li>            
+    </ul>     
+</footer>
+<!-- 弹出层 -->
+    <div class="grayCover">
+        <div class="grayCon">
+            <ul>
+                <li><a href="issueActive.html"><span><img src="images/issueG.png"  /></span><b>发布活动</b></a></li>
+                <li><a href="issueShare.html"><span><img src="images/shareG.png"  /></span><b>分享活动</b></a></li>
+            </ul>
+            <p><img src="images/close .png" onclick="closeGray()" /></p>
+        </div>
+        <div class="grayMark"></div>
+    </div>
+</body>
+</html>
