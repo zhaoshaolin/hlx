@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>发布活动</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/font.css" />
+    <link rel="stylesheet" type="text/css" href="css/mobiscroll.2.13.2.css" />
+    <link rel="stylesheet" type="text/css" href="css/list.css" />
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/footer.js"></script>
+    <script type="text/javascript" src="js/mobiscroll.2.13.2.js">
+    </script>
+    <script type="text/javascript">
+        $(function(){
+            var curr = new Date().getFullYear();
+            var opt = {};
+            opt.default = {
+                theme:'default',
+                mode:'scroller',
+                display:'modal',
+                animate:'fade'
+            };
+            opt.select = { preset:'select'};
+            var aa = $.extend(opt['select'], opt['default']);
+            $(".demo-test-select").scroller(aa);
+        })
+    </script>
+</head>
+<body>
+<!-- header -->
+<header class="title">
+    <span class="cancle">取消</span>
+    发布活动
+    <span class="issue">发布</span>
+</header>
+<div style="height:40px;"></div>
+<!-- issue-share -->
+<div class="issueTitle">
+    <input type="text" placeholder="标题" />
+</div>
+<div class="issueTxt">
+    <textarea id="issueArea" placeholder="描述下你的分享"></textarea>
+    <a href="#">+</a>
+</div>
+<div class="activeCon">
+    <p class="ruleTitle">活动规则</p>
+    <ul class="sortUl">
+        <li class="sortL">
+            <div data-role="fieldcontain" class="demo-select sortInput">
+                <select id="city" class="demo-test-select" data-role="none">
+                    <option value="0">活动类型</option>
+                    <option value="1">免费</option>
+                    <option value="2">收费</option>
+                   <!--  <option value="3">多人活动</option>
+                    <option value="4">团体活动</option> -->
+                </select>
+                <i class="iconRight"></i>
+            </div>
+        </li>
+        <li class="sortR">
+            <span>活动人数：</span>
+            <input class="sortInput sortInput1" type="text" placeholder="请输入人数" />人
+        </li>
+    </ul>
+    <div class="feeDiv">
+            <span>活动费用：</span>
+            <input class="" type="text" placeholder="请输入金额" />
+            <b>元</b>
+    </div>
+    <div class="videoDiv">
+        <p>活动图片或视频（可上传多张）</p>
+        <a href="#">+</a>
+    </div>
+    <div class="locationDiv">
+        活动地点：<span>北京</span>
+    </div>
+</div>
+</body>
+</html>
